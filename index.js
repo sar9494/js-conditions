@@ -366,3 +366,280 @@ else{
  else{
     console.log('elder');
  }
+
+
+
+ //ex1
+
+ const numb=-5;
+ if(numb<0){
+    console.log('negative');
+ }
+ else  if(numb==0){
+    console.log('zero');
+ }
+else{
+    console.log('positive');
+ }
+
+  //ex2
+  const temprature=15;
+  if(temprature<0){
+    console.log('C is freezing');
+  }
+  else if(temprature>=0&&temprature<30){
+    console.log(temprature+'C is normal');
+  }
+  else{
+    console.log(temprature+'C is hot');
+  }
+
+  //ex3
+  const char='a';
+  if(char==='a'||char==='e'||char==='i'||char==='u'||char==='o'){
+    console.log(char+' is a vowel');
+  }
+  else{
+    console.log(char+' is a consonant');
+  }
+
+  //ex4
+  const grade=85;
+  if(grade<0||grade>100){
+    console.log("it's not a grade");
+  }
+  else if(grade>=90){
+    console.log('Your grade is A');
+  }
+  else if(grade>=80){
+    console.log('Your grade is B');
+  }
+  else if(grade>=70){
+    console.log('Your grade is C');
+  }
+  else if(grade>=60){
+    console.log('Your grade is D');
+  }
+  else{
+    console.log('Your grade is F');
+  }
+
+  //ex5
+  const age=16;
+  if(age<0 ||age>120){
+    console.log('Invalid value');
+  }
+  else if(age<13){
+    console.log('You are a child')
+  }
+  else if(age<=19){
+    console.log('You are a teenager')
+  }
+  else{
+    console.log('You are a adult')
+  }
+
+  //ex6
+  const givenNumber=35;
+  if(givenNumber%5===0&&givenNumber%7===0){
+    console.log(givenNumber+' is divisible by both 5 and 7')
+  }
+  else if(givenNumber%5===0){
+    console.log(givenNumber+' is divisible by 5')
+  }
+  else if(givenNumber%7===0){
+    console.log(givenNumber+' is divisible by 7')
+  }
+  else{
+    console.log(givenNumber+' is divisible by neither 5 and 7')
+  }
+
+  //ex7
+  const givenTime=14;
+  if(givenTime<0||givenTime>23){
+    console.log('Its no time')
+  }
+  else if(givenTime<12){
+    console.log('Its morning ')
+  }
+  else if(givenTime<18){
+    console.log('Its afternoon ')
+  }
+  else{
+    console.log('Its evening')
+  }
+
+  //ex8
+  const checkNumber=25;
+  if(checkNumber>10000&&checkNumber<0){
+    console.log('Invalid value');
+  }
+  else if(checkNumber/10<1){
+    console.log(checkNumber,' is single-digit number')
+  }
+  else if(checkNumber/10/10<1){
+    console.log(checkNumber,' is double-digit number')
+  }
+  else {
+    console.log(checkNumber,' is trible-digit number')
+  }
+
+  //ex9
+  const number9=16;
+  if(number9%4===0){
+    console.log(number9,' is a multiple of 4')
+  }
+  else{
+    console.log(number9,' is not a multiple of 4')
+  }
+
+  //ex10
+  let char10='G';
+  if(char10.charCodeAt(0)<91||char10.charCodeAt(0)>64){
+    console.log(char10," is uppercase")
+  }
+  else if(char10.charCodeAt(0)<123||char10.charCodeAt(0)>96){
+    console.log(char10," is lowercase")
+  }
+  else{
+    console.log('its not alphabet')
+  }
+
+  //ex11
+  const day=6;
+  if(day>7&&day<0){
+    console.log('Invalid value');
+  }
+  else if(day<6){
+    console.log(day,' is weekday')
+  }
+  else{
+    console.log(day,' is weekend')
+  }
+    //ex12
+    const size='Medium';
+    if(size==='medium'||size==='Medium'){
+        console.log('A medium size coffee costs $3 ')
+    }
+    else if(size==='Small'||size==='small'){
+        console.log('A small size coffee costs $2 ')
+    }
+    else {
+        console.log('A large size coffee costs $4 ')
+    }
+    
+    //ex13
+    const weather='rainy';
+    if(weather==='rainy'){
+        console.log("Don't forget your umbrella! ")
+    }
+    else if(weather==='Cold'){
+        console.log("Don't forget your jacket! ")
+    }
+    else {
+        console.log("Don't forget your sunglasses! ")
+    }
+
+    //ex14
+    const age14=70;
+    if(age14<5){
+        console.log('Your ticket price is free')
+    }
+    else if(age14>4&&age14<19){
+        console.log('Your ticket price is $10 ')
+    }
+    else if(age14>18&&age14<61){
+        console.log('Your ticket price is $15 ')
+    }
+    else {
+        console.log('Your ticket price is $12')
+    }
+
+    //ex15
+    const energy=25;
+    if(energy>70){
+        console.log('Your pet is Happy')
+    }
+    else if(energy>29&&energy<71){
+        console.log('Your pet is Hungry')
+    }
+    else if(energy<30){
+        console.log('Your pet is Sleepy')
+    }
+    else {
+        console.log('we dont know')
+    }
+
+    //ex16
+    const weight1=75;
+    if(energy>100){
+        console.log('You are lifting at an Advanced level')
+    }
+    else if(weight1>49&&weight1<101){
+        console.log('You are lifting at an Intermediate level')
+    }
+    else if(weight1<50){
+        console.log('You are lifting at an Beginner level')
+    }
+    else {
+        console.log('we dont know')
+    }
+
+    //ex17
+    const totalSpent=150;
+    if(totalSpent>200){
+        console.log('You get a 30% discount')
+    }
+    else if(totalSpent>49&&totalSpent<101){
+        console.log('You get a 10% discount')
+    }
+    else if(totalSpent>100&&totalSpent<201){
+        console.log('You get a 20% discount')
+    }
+    else if(totalSpent<50){
+        console.log('You get a no discount')
+    }
+
+    //ex18
+    const numcheck=/\d+/
+    const specialChar=/^\S+.*\S+$/;
+    const password="Pass123!"
+    if(numcheck.test(password)===true&&specialChar.test(password)===true&&password.length>=8){
+        console.log('Your password is strong')
+    }
+    else if(numcheck.test(password)===true&&specialChar.test(password)===true&&password.length>=6){
+        console.log('Your password is medium')
+    }
+    else {
+        console.log('Your password is weak')
+    }
+
+    //ex19
+    const height1=130;
+    const age1=65;
+    if(height1<120&& age1<19){
+        console.log("Your ticket price is $5")
+    }
+    else if(height1>=120&&age1<60){
+        console.log("Your ticket price is $10")
+    }
+    else {
+        console.log("Your ticket price is $7")
+    }
+
+    //ex20
+    const dataUsage=25;
+    if(dataUsage>50){
+        console.log("Your data cost is $50")
+    }
+    else if(dataUsage>=0&&dataUsage<5){
+        console.log("Your data cost is $10")
+    }
+    else if(dataUsage>=5&&dataUsage<21){
+        console.log("Your data cost is $10")
+    }
+    else if(dataUsage>=20&&dataUsage<=50){
+        console.log("Your data cost is $30")
+    }
+
+    //ex21
