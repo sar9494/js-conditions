@@ -685,9 +685,9 @@ else{
     let yearsWorked = 6;
     const metTarget = true
     const attendance23 = 95;
-    const baseSalary=2000;
+    let baseSalary=2000;
     if(yearsWorked>=5&&metTarget==true&&attendance23>=90){
-        baseSalary+=500+300+100;
+        baseSalary+=(500+300+100);
     }
     else if(metTarget==true&&attendance23>=90){
         baseSalary+=300+100;
@@ -698,9 +698,10 @@ else{
     else if(yearsWorked>=5&&metTarget==true){
         baseSalary+=500+300;
     }
-    if(attendance23>=90){
+    else if(attendance23>=90){
         baseSalary+=100;
-    }if(yearsWorked>=5){
+    }
+    else if(yearsWorked>=5){
         baseSalary+=500;
     }
     else{
@@ -712,3 +713,25 @@ else{
     //ex24
     let gender = 'Female';
     const time = '2:45:00';
+    if(gender=='Female'){
+        if(parseInt(time.charAt(0))>=2&&parseInt(time.charAt(2)+time.charAt(3))<=30){
+            console.log('Your perfonrmance level is Elite')
+        }
+        else if(parseInt(time.charAt(0))>=3&&parseInt(time.charAt(2)+time.charAt(3))<=15){
+            console.log('Your perfonrmance level is Advanced')
+        }
+        else{
+            console.log('Your perfonrmance level is Amateur')
+        }
+    }
+    else if(gender=='Male'){
+        if(parseInt(time.charAt(0))>=2&&parseInt(time.charAt(2)+time.charAt(3))<=10){
+            console.log('Your perfonrmance level is Elite')
+        }
+        else if(parseInt(time.charAt(0))>=3){
+            console.log('Your perfonrmance level is Advanced')
+        }
+        else{
+            console.log('Your perfonrmance level is Amateur')
+        }
+    }
