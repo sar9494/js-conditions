@@ -714,10 +714,10 @@ else{
     let gender = 'Female';
     const time = '2:45:00';
     if(gender=='Female'){
-        if(parseInt(time.charAt(0))>=2&&parseInt(time.charAt(2)+time.charAt(3))<=30){
+        if((parseInt(time.charAt(0))==2&&parseInt(time.charAt(2)+time.charAt(3))<=30)||(parseInt(time.charAt(0))&&parseInt(time.charAt(2)+time.charAt(3))<=59)){
             console.log('Your perfonrmance level is Elite')
         }
-        else if(parseInt(time.charAt(0))>=3&&parseInt(time.charAt(2)+time.charAt(3))<=15){
+        else if((parseInt(time.charAt(0))>3&&parseInt(time.charAt(2)+time.charAt(3))<=15)||(parseInt(time.charAt(0))==2&&parseInt(time.charAt(2)+time.charAt(3))<=59)){
             console.log('Your perfonrmance level is Advanced')
         }
         else{
