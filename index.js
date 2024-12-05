@@ -643,3 +643,72 @@ else{
     }
 
     //ex21
+    const age21 = 30;
+    const income = 30000;
+    const creditScore = 650;
+    if(age21>=21&&income>=25000&&creditScore>600){
+        console.log("You are eligible for the loan");
+    }
+    else{
+        console.log("You are not eligible for the loan");
+    }
+
+    //ex22
+    const attendance = 80; 
+    const exam1 = 85;
+    const exam2=90;
+    const exam3=68;
+    const average=(exam1+exam2+exam3)/3;
+    if(attendance<75){
+        console.log("your final grade is F");
+    }
+    else if(average<60){
+        console.log("your final grade is F")
+    } 
+    else if(average<70){
+        console.log("your final grade is D")
+    }
+    else if(average<80){
+        console.log("your final grade is C")
+    }
+    else if(average<90){
+        console.log("your final grade is B")
+    }
+    else if(average<=100){
+        console.log("your final grade is A")
+    }
+    else{
+        console.log("invalid value")
+    }
+
+    //ex23
+    let yearsWorked = 6;
+    const metTarget = true
+    const attendance23 = 95;
+    const baseSalary=2000;
+    if(yearsWorked>=5&&metTarget==true&&attendance23>=90){
+        baseSalary+=500+300+100;
+    }
+    else if(metTarget==true&&attendance23>=90){
+        baseSalary+=300+100;
+    }
+    else if(yearsWorked>=5&&attendance23>=90){
+        baseSalary+=500+100;
+    }
+    else if(yearsWorked>=5&&metTarget==true){
+        baseSalary+=500+300;
+    }
+    if(attendance23>=90){
+        baseSalary+=100;
+    }if(yearsWorked>=5){
+        baseSalary+=500;
+    }
+    else{
+        baseSalary+=300;
+    }
+    console.log("Your total salary is $",baseSalary);
+    
+
+    //ex24
+    let gender = 'Female';
+    const time = '2:45:00';
